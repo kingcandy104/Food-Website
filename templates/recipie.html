@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>How to make lasagne</h1>
+    <p style="text-align: center;">Ingredients: 2 Onions, 1 tbs of garlic, 2 tbs of oil, 1 kg mince, 1 carton passata, 1 tsp of salt, 1 tsp of chilli flakes, 2 tomatoes, 2 tbs butter, 2 tbs flour, 2 1/2 cups milk, 1/2 tsp salt, 200 g cheese, 1 tsp oregano, 1 pack lasagne sheets.<br>Recipe: 1. Saute Onions in oil. 2. Add garlic and saute. 3. Add salt, chilli flakes, and tomatoes, saute. 4. Add mince and cook for 10 minutes. 5. Add passata and cook for 10 minutes. 6. In a pan, melt butter. 7. Add flour and cook until it changes colour. 8. Gradually add milk and stir. 9. Add salt, pepper, and cheese, and cook until the sauce thickens. 10. Add oregano. 11. Assemble lasagne by layering mince, pasta sheet, white sauce (repeat x2). 12. Top with some cheese. 13. Bake for 25 minutes at 180 degrees.</p>
+    <img src="{{ url_for('static', filename='LASAGNE.jpeg') }}" alt="Lasagne" style="width: 100%; max-width: 600px;">
+
+    <h2>Submit Your Recipe</h2> <!-- Got from ChatGPT -->
+    <form action="/submit_recipe" method="POST"> <!-- Got from ChatGPT -->
+        <label for="recipe-name">Recipe Name:</label><br> <!-- Got from ChatGPT -->
+        <input type="text" id="recipe-name" name="recipe_name" required><br><br> <!-- Got from ChatGPT -->
+
+        <label for="ingredients">Ingredients:</label><br> <!-- Got from ChatGPT -->
+        <textarea id="ingredients" name="ingredients" rows="4" required></textarea><br><br> <!-- Got from ChatGPT -->
+
+        <label for="instructions">Instructions:</label><br> <!-- Got from ChatGPT -->
+        <textarea id="instructions" name="instructions" rows="6" required></textarea><br><br> <!-- Got from ChatGPT -->
+
+        <button type="submit">Submit Recipe</button> <!-- Got from ChatGPT -->
+    </form>
+{% endblock %}

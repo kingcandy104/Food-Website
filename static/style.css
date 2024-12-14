@@ -1,0 +1,50 @@
+body {
+    font-family: "Baguet Script", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffb700;
+    color: #333;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #00ff26;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Page content */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Lobster', cursive;
+    color: #2c2c2c;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #131313;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
